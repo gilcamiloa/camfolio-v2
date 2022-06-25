@@ -1,0 +1,56 @@
+@import '../../global.scss';
+
+.navbar {
+  opacity: 0.7;
+  width: 100vw;
+  height: 12.5%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  pointer-events:none;
+  overflow: hidden;
+
+  @include mobile {
+    max-height: 12.5vh;
+  }
+
+
+  .wrapper {
+    width:100vw;
+    height: 12.5vh;
+    padding:10px 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      max-height: 12.5vh;
+    }
+
+    .left {
+      pointer-events:fill;
+
+      .logo {
+        width: 100%;
+        height: auto;
+        max-width: 120px;
+        opacity: 1;
+        // background-color: black;
+      }
+    }
+
+    .right {
+      pointer-events:fill;
+      padding-right: 30px;
+      transform-origin: left;
+      transition: all 2s ease;
+      font-weight: bold;
+
+      .active{
+        color:black;
+        transition-duration: 3s;
+      }
+    }
+  }
+}

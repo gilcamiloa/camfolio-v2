@@ -1,0 +1,75 @@
+@import '../../global.scss';
+
+.projects{
+  background-color: $maincolor;
+  height: 100vh;
+  width: 100vw;
+  flex: none;
+  display: flex;
+  scroll-snap-align: start;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .pl {
+    z-index: 4;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  .pl-texts {
+    width: 65%;
+  }
+
+  .pl-title {
+    font-size: 50px;
+    font-weight: 700;
+
+  }
+
+  .pl-desc {
+    margin: 20px 0px;
+  }
+
+  .pl-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .p-img {
+  width: 100%;
+  // transition: all 3s ease;
+}
+
+  .p-img div{
+  width: 100%;
+  background: gray;
+  transition: all 3s ease;
+  }
+
+  .p:hover .p-img {
+    transform: translateY(-100%);
+  }
+
+  @media screen and (max-width: 480px) {
+    .pl {
+      padding: 10px;
+    }
+
+    .pl-texts {
+      width: 100%;
+    }
+
+    .pl-desc {
+      display: none;
+    }
+  }
+  }
+}
