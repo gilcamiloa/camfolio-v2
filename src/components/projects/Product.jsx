@@ -1,5 +1,5 @@
 import "./product.scss";
-import { React } from 'react';
+import React from 'react';
 
 const Product = ({ name, img, link, desc }) => {
   return (
@@ -9,7 +9,7 @@ const Product = ({ name, img, link, desc }) => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <img src={img} alt='' className="p-img" />
       </a>
       <div className="p-desc">

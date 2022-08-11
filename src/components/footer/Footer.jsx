@@ -1,5 +1,5 @@
 import './footer.scss'
-import { React } from 'react';
+import React from 'react';
 // import Intro from '../intro/Intro'
 // import Projects from '../projects/Projects'
 // import Skills from '../skills/Skills'
@@ -18,15 +18,15 @@ export default function Footer() {
     <div className="footer">
       <div className="items">
         <div className='link__wrapper'>
-          <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noreferrer" id='a-linkedin' data-tip data-for="linkedin">
+          <a href="https://www.linkedin.com/in/camilo-gil" target="_blank" rel="noopener noreferrer" id='a-linkedin' data-tip data-for="linkedin">
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
             <ReactTooltip id="linkedin" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>LinkedIn</ReactTooltip>
             </a>
-          <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noreferrer" id='a-github' data-tip data-for="github">
+          <a href="https://www.github.com/gilcamiloa" target="_blank" rel="noopener noreferrer" id='a-github' data-tip data-for="github">
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
             <ReactTooltip id="github" place="top" effect="solid" backgroundColor='none' data-delay-show='1200'>GitHub</ReactTooltip>
             </a>
-          <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noreferrer" id='a-email' data-tip data-for="email">
+          <a href="mailto:cgilv6@gmail.com" target="_blank" rel="noopener noreferrer" id='a-email' data-tip data-for="email">
             <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon>
             <ReactTooltip id="email" place="top" effect="solid" backgroundColor='none' data-delay-show='700'>Email</ReactTooltip>
             </a>

@@ -1,5 +1,5 @@
 import './intro.scss'
-import { React } from 'react';
+import React from 'react';
 import Typed from 'react-typed'
 import cam from '../../images/cam-images/cam-airjoshuaa-removebg.png'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';

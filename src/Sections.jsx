@@ -1,33 +1,24 @@
 import './sections.scss'
-import { React} from 'react'
-// import { React,useState } from 'react'
-// import { Link } from 'react-router-dom'
-import { Link } from 'react-scroll'
+import React from 'react'
 import Intro from './components/intro/Intro'
 import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 
 export default function Sections() {
-  var Scroll = require('react-scroll');
-  var scroll = Scroll.animateScroll;
 
-  scroll.scrollTo(0);
-  scroll.scrollToPro(100);
-  scroll.scrollToSkills(200);
-  scroll.scrollToContact(300);
   return (
     <div className="sections" >
       <div className="nav__dots first__current">
-        <div id="dot1" className="dot"><Link to='sectionsIntro' onClick={<Intro/>} spy={true} smooth={true} duration={500} horizontal={true}></Link></div>
-        <div id="dot2" className="dot"><Link to='sectionProjects' onClick={<Projects />} spy={true} smooth={true} duration={500} horizontal={true}></Link></div>
-        <div id="dot3" className="dot"><Link to='sectionsSkills' onClick={<Skills />} spy={true} smooth={true} duration={500} horizontal={true}></Link></div>
-        <div id="dot4" className="dot"><Link to='sectionsContact' onClick={<Contact />} spy={true} smooth={true} duration={500} horizontal={true}></Link></div>
+        <div id="intro" ><a href='#intro'><div className="dot"></div></a></div>
+        <div id="projects" ><a href='#projects'><div className="dot"></div></a></div>
+        <div id="skills" ><a href='#skills'><div className="dot"></div></a></div>
+        <div id="contact"><a href='#contact'><div className="dot"></div></a></div>
       </div>
-      <Intro exact path="/" name='sectionsIntro' className="sectionsSlides sectionIntro"/>
-      <Projects path="/projects" name='sectionProjects' className="sectionsSlides sectionProjects"/>
-      <Skills path="/skills" name='sectionsSkills' className="sectionsSlides sectionSkills"/>
-      <Contact path="/contact" name='sectionsContact' className="sectionsSlides sectionContact"/>
+      <div id="intro" ><Intro exact path="/" name='sectionsIntro' className="sectionsSlides sectionIntro"/></div>
+      <div id="projects" ><Projects path="/projects" name='sectionProjects' className="sectionsSlides sectionProjects"/></div >
+      <div id="skills" ><Skills path="/skills" name='sectionsSkills' className="sectionsSlides sectionSkills"/></div >
+      <div id="contact" ><Contact path="/contact" name='sectionsContact' className="sectionsSlides sectionContact"/></div >
     </div>
   );
 }

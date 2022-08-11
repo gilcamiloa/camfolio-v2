@@ -1,5 +1,5 @@
 import './about.scss'
-import { React } from 'react';
+import React from 'react';
 import cam from '../../images/cam-images/cam-linkedin-nobg.png';
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 

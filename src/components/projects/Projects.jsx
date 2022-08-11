@@ -1,5 +1,5 @@
 import "./projects.scss";
-import { React } from 'react';
+import React from 'react';
 import Product from "./Product";
 import { products } from "./productData";
 

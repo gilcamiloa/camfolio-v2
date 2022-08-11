@@ -1,6 +1,6 @@
 import './skills.scss'
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
-import {React} from 'react';
+import React from 'react';
 import {
   siGithub,
   siPostgresql,

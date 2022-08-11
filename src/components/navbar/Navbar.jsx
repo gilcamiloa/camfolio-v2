@@ -1,5 +1,5 @@
 import './navbar.scss'
-import { React } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom'
 import About from "../about/About.jsx"
 import logo from '../../images/cloud-images/logo2-apple-touch-icon.png'

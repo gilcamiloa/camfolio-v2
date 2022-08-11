@@ -1,5 +1,5 @@
 import './app.scss'
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import ParticleBackground from '../src/particleBackground'
 import About from './components/about/About'
 import Navbar from './components/navbar/Navbar'
